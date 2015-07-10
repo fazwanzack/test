@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script src="cordova.js"></script>
+<script>
+function pageLoaded()
+{
+	document.addEventListener("deviceready",phoneReady(),false);
+}
+function phoneReady()
+{
+}
+function initCamera()
+{
+	navigator.camera.getPicture(onSuccess,onFail,{quality:80});
+}
+function onSuccess(imageURL)
+{
+	document.getElementById("pic").src = imageURL;
+}
+function onFail(message)
+{
+	//message = reason for failure
+}
+</script>
+</head>
+<body onload="pageLoaded()">
+<input type="button" value="Start Camera" onclick="initCamera()" />
+<br/>
+<img src="" id="pic" height="400" />
+</body>
+</html>

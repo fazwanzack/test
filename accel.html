@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script src="cordova.js"></script>
+<script>
+function doAccel(accel)
+{
+	document.getElementById("display").innerHTML="X: " + accel.X+ "<br/>" + "Y: "+accel.Y+"<br/>"+"Z: "+ accel.Z";
+}
+function errorAccel(accel)
+{
+	
+}
+function pageReady()
+{
+	
+	//getCurrentAcceleration
+	var accelID = navigator.accelerometer.getCurrentAcceleration(doAccel,errorAccel);
+}
+</script>
+</head>
+<body onload="pageReady()">
+<h1 id="dislay"<h1>
+</body>
+</html>

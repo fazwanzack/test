@@ -1,0 +1,22 @@
+
+ <widget xmlns       = "http://www.w3.org/ns/widgets"
+    xmlns:gap       = "http://phonegap.com/ns/1.0"
+    xmlns:android   = "http://schemas.android.com/apk/res/android"
+    id              = "com.lumberg.greeeaaat"
+    version         = "1.0.0">
+        <name>The New Test App</name>
+        <description>
+        Learning Phonegap can be fun
+        </description>
+        <author email="fazwanray@gmail.com" href="http://phonegap.com">
+        Fazwan Zack
+        </author>
+        <content src="index.html" />
+        <access origin="*" />
+		
+		<icon src="images/images.jpg" />
+		<gap:splash src="images/add.jpg"/>
+		<gap:plugin name="org.apache.cordova.camera" />
+		<gap:plugin name="org.apache.cordova.dialogs" />
+		<gap:plugin name="org.apache.cordova.device-motion" />
+    </widget>
